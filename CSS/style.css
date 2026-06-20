@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f1923; /* Fundo Escuro Oficial do Valorant */
+    color: #ece8e1; /* Off-White do Valorant */
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Anton', sans-serif; /* Fonte blocada padrão Riot */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff4655; /* Vermelho Oficial Valorant */
+    margin-bottom: 15px;
+}
+
+/* Cabeçalho e Menu */
+.nav_val {
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 3px solid #ff4655;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #ece8e1;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4655;
+}
+
+div.logo > a > img {
+    max-width: 150px;
+    transition: transform 0.3s;
+}
+
+div.logo > a > img:hover {
+    transform: scale(1.05);
+}
+
+/* Container Principal para centralizar o conteúdo */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+
+/* Imagens */
+.hero-img {
+    width: 100%;
+    border: 2px solid #ff4655;
+    margin-bottom: 30px;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+li strong {
+    color: #ff4655;
+}
+
+/* Tabela Padrão Jogo */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1f2326;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff4655;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Formulário Profissional */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ece8e1;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #ece8e1;
+    border: 2px solid transparent;
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    border: 2px solid #ff4655;
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    background-color: #ff4655;
+    color: #ece8e1;
+    border: none;
+    padding: 15px 30px;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    display: block;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #e03e4d;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 30px 0;
+}
+footer {
+    background-color: #111111;
+    border-top: 3px solid #ff4655;
+    padding: 25px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content p {
+    color: #ece8e1;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+/* Deixa o texto secundário (projeto acadêmico) um pouco mais discreto */
+.footer-content p.secundario {
+    color: #888;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}

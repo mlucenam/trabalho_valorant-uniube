@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Valorant - 1192825 - Mateus de Lucena Martins</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav_val">
+                <div class="logo">
+                    <a target="_blank" href="https://uniube.br/">
+                        <img src="Imagens/logoUniube.png" alt="Uniube">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="imagens.html">Imagens</a></li>
+                    <li><a href="links.html">Links Úteis</a></li>
+                    <li><a href="fale_conosco.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Central de Comunicação</h1>
+            <p>Reporte bugs, envie seu feedback ou sugira melhorias para a Riot Games através do nosso portal.</p>
+
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="nome">Qual seu Riot ID? (Nome#TAG)</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Sova#BR1" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Você joga partidas Competitivas (Ranked)?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="sim" name="joga_ranked" value="sim" checked>
+                        <label for="sim">Sim, busco o Radiante</label>
+                        
+                        <input type="radio" id="nao" name="joga_ranked" value="nao">
+                        <label for="nao">Não, jogo Casual</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="funcao">Qual sua Classe Favorita?</label>
+                    <select id="funcao" name="funcao">
+                        <option value="duelista">Duelista</option>
+                        <option value="controlador">Controlador</option>
+                        <option value="iniciador">Iniciador</option>
+                        <option value="sentinela">Sentinela</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Detalhe seu Feedback:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                </div>
+
+                <button type="submit">Enviar Dados</button>
+
+            </form>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Portal Valorant. Desenvolvido por <strong>Mateus de Lucena Martins (RA: 1192825)</strong>.</p>
+                <p class="secundario">Projeto acadêmico de Programação para a Internet - Uniube.</p>
+            </div>
+        </footer>
+    </body>
+</html>
